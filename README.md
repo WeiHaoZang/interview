@@ -241,7 +241,7 @@ assert( p != NULL );
 #pragma pack(push)  // 保存对齐状态
 #pragma pack(4)     // 设定为 4 字节对齐
 
-struct test
+struct test     //struct结构体在32位机中默认以4字节对齐，在64位机中默认以8字节对齐。 
 {
     char m1;
     double m4;
